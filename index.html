@@ -3,70 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <title>DJ Morvik</title>
+
 <style>
 body {
   margin: 0;
-  font-family: Arial;
-  background: #0a0a0a;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a0033, #000);
   color: white;
   text-align: center;
 }
 
-section {
-  padding: 60px 20px;
-}
-
-h1 {
-  font-size: 42px;
-  margin: 10px 0;
+/* HERO */
+.hero {
+  padding: 80px 20px;
 }
 
 .pfp {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid white;
+  border: 3px solid #a855f7;
+  box-shadow: 0 0 25px #a855f7;
   margin-bottom: 20px;
 }
 
+h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
 button {
-  padding: 12px 25px;
+  padding: 12px 30px;
   margin: 10px;
-  background: white;
+  background: linear-gradient(45deg, #a855f7, #7c3aed);
   border: none;
+  color: white;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #a855f7;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #a855f7;
+}
+
+.text {
+  max-width: 600px;
+  margin: auto;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* DIVIDER */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: #a855f7;
+  margin: 20px auto;
 }
 </style>
+
 </head>
 
 <body>
 
-<section>
-  <!-- ERSETZ DAS HIER mit deinem Bild -->
+<!-- HERO -->
+<div class="hero">
   <img src="IMG_9006.jpeg" class="pfp">
 
-  <h1>DJ Morvik</h1>
-  <p>Ich bin DJ Morvik – ich bring den Sound, die Vibes und die Energie.</p>
+  <h1>DJ MORVIK</h1>
+  <div class="divider"></div>
+
+  <p class="subtitle">
+    Sound. Vibes. Energy.  
+    Ich bring den Club zum Leben.
+  </p>
 
   <a href="https://www.instagram.com/mxritz_wmr/" target="_blank">
     <button>Instagram</button>
   </a>
-</section>
+</div>
 
-<section>
+<!-- ABOUT -->
+<div class="section">
   <h2>Über mich</h2>
-  <p>
-    Musik ist mehr als nur Sound – es ist ein Gefühl.  
-    Als DJ bringe ich Menschen zusammen und sorge für unvergessliche Nächte.
-  </p>
-</section>
+  <div class="divider"></div>
 
-<section>
-  <h2>Kontakt</h2>
-  <p>Für Bookings & Collabs → DM auf Instagram</p>
-</section>
+  <p class="text">
+    Ich bin DJ Morvik – Musik ist für mich mehr als nur Beats.  
+    Es geht um Atmosphäre, Emotionen und unvergessliche Momente.  
+    Jeder Track, jeder Drop bringt die Crowd näher zusammen.
+  </p>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <h2>Bookings & Kontakt</h2>
+  <div class="divider"></div>
+
+  <p class="text">
+    Du willst mich für ein Event, Club oder Projekt buchen?  
+    Schreib mir einfach auf Instagram und lass uns was starten.
+  </p>
+</div>
 
 </body>
 </html>
