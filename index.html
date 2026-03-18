@@ -15,7 +15,7 @@ body {
 
 /* HERO */
 .hero {
-  padding: 80px 20px;
+  padding: 70px 20px 30px; /* weniger Abstand nach unten */
 }
 
 /* PROFILE */
@@ -37,7 +37,7 @@ h1 {
 
 .subtitle {
   color: #bbb;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* BUTTON */
@@ -51,42 +51,50 @@ button {
   margin-top: 10px;
 }
 
-/* VISUALIZER BOX */
+/* VISUALIZER */
 .visualizer {
-  margin: 25px auto;
-  width: 140px;
-  height: 50px; /* FIXED HEIGHT → KEIN WACKELN */
+  margin: 20px auto 10px; /* näher an nächste Section */
+  width: 260px; /* breiter */
+  height: 50px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 3px; /* enger Abstand */
+  gap: 2px;
 }
 
 /* BARS */
 .bar {
-  width: 6px;
-  height: 10px;
+  width: 4px;
   background: #a855f7;
-  animation: bounce 1s infinite ease-in-out;
+  animation: bounce 0.9s infinite ease-in-out;
 }
 
-/* DELAYS für Variation */
-.bar:nth-child(2) { animation-delay: 0.1s; }
-.bar:nth-child(3) { animation-delay: 0.2s; }
-.bar:nth-child(4) { animation-delay: 0.3s; }
-.bar:nth-child(5) { animation-delay: 0.4s; }
-.bar:nth-child(6) { animation-delay: 0.5s; }
-.bar:nth-child(7) { animation-delay: 0.6s; }
+/* RANDOM DELAYS + DURATIONS */
+.bar:nth-child(1) { animation-delay: 0.1s; animation-duration: 0.9s; }
+.bar:nth-child(2) { animation-delay: 0.3s; animation-duration: 1.1s; }
+.bar:nth-child(3) { animation-delay: 0.5s; animation-duration: 0.8s; }
+.bar:nth-child(4) { animation-delay: 0.2s; animation-duration: 1.2s; }
+.bar:nth-child(5) { animation-delay: 0.6s; animation-duration: 0.7s; }
+.bar:nth-child(6) { animation-delay: 0.4s; animation-duration: 1.0s; }
+.bar:nth-child(7) { animation-delay: 0.7s; animation-duration: 0.9s; }
+.bar:nth-child(8) { animation-delay: 0.2s; animation-duration: 1.3s; }
+.bar:nth-child(9) { animation-delay: 0.5s; animation-duration: 0.8s; }
+.bar:nth-child(10){ animation-delay: 0.1s; animation-duration: 1.1s; }
+.bar:nth-child(11){ animation-delay: 0.6s; animation-duration: 0.7s; }
+.bar:nth-child(12){ animation-delay: 0.3s; animation-duration: 1.2s; }
+.bar:nth-child(13){ animation-delay: 0.4s; animation-duration: 0.9s; }
+.bar:nth-child(14){ animation-delay: 0.2s; animation-duration: 1.0s; }
+.bar:nth-child(15){ animation-delay: 0.7s; animation-duration: 0.8s; }
 
-/* ANIMATION */
+/* RANDOM HEIGHT ANIMATION */
 @keyframes bounce {
-  0%,100% { height: 10px; }
+  0%,100% { height: 8px; }
   50% { height: 45px; }
 }
 
 /* SECTION */
 .section {
-  padding: 60px 20px;
+  padding: 40px 20px; /* weniger Abstand */
 }
 
 h2 {
@@ -108,7 +116,7 @@ h2 {
   <img src="IMG_9006.jpeg" class="pfp">
 
   <h1>DJ MORVIK</h1>
-  <p class="subtitle">Sound. Vibes. Energy.</p>
+  <p class="subtitle">Sound. Energy. Nightlife.</p>
 
   <a href="https://www.instagram.com/morvikmusic/" target="_blank">
     <button>Instagram</button>
@@ -116,21 +124,19 @@ h2 {
 
   <!-- VISUALIZER -->
   <div class="visualizer">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div>
   </div>
 </div>
 
 <div class="section">
   <h2>Über mich</h2>
   <p class="text">
-    Ich bin DJ Morvik. Musik ist für mich mehr als nur Sound –  
-    es ist Energie, Emotion und echte Atmosphäre.
+    Ich bin DJ Morvik. Musik ist Energie, Emotion und Atmosphäre.  
+    Mein Ziel: jede Crowd fühlen lassen, was echter Vibe ist.
   </p>
 </div>
 
